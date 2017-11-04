@@ -1,0 +1,27 @@
+{
+  "name": "y-combinator-node",
+  "version": "1.1.0",
+  "description": "Y combinator for javascript",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andy2046/y-combinator-node.git"
+  },
+  "keywords": [
+    "Y",
+    "combinator",
+    "javascript"
+  ],
+  "author": "AndyP (https://www.npmjs.com/~andy*()",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andy2046/y-combinator-node/issues"
+  },
+  "homepage": "https://github.com/andy2046/y-combinator-node#readme"
+}
