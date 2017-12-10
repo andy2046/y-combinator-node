@@ -1,13 +1,18 @@
 {
   "name": "y-combinator-node",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Y combinator for javascript",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "node ./test"
+    "test": "node ./test",
+    "lint": "./node_modules/.bin/eslint src",
+    "lint-fix": "./node_modules/.bin/eslint --fix src --ext .js",
+    "clean-dist": "node ./bin/clean-dist.js",
+    "build": "npm run clean-dist && NODE_ENV=production npm run webpack-build",
+    "webpack-build": "./node_modules/.bin/webpack --progress -p"
   },
   "repository": {
     "type": "git",
@@ -20,6 +25,27 @@
   ],
   "author": "AndyP (https://www.npmjs.com/~andy*()",
   "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.26.0",
+    "babel-eslint": "7.2.3",
+    "babel-loader": "7.1.2",
+    "babel-runtime": "6.18.0",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-plugin-transform-runtime": "6.23.0",
+    "babel-preset-env": "1.6.1",
+    "del": "2.2.2",
+    "eslint": "3.19.0",
+    "eslint-config-standard": "10.2.1",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-node": "4.2.2",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-standard": "3.0.1",
+    "eslint-watch": "3.1.0",
+    "uglifyjs-webpack-plugin": "1.1.2",
+    "webpack": "3.5.5"
+  },
   "bugs": {
     "url": "https://github.com/andy2046/y-combinator-node/issues"
   },

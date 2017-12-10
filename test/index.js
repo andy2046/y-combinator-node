@@ -1,4 +1,4 @@
-const { Y } = require('../src')
+const { Y } = require('../dist')
 
 const fibonacci = Y(fib => (n => (n <= 2 ? 1 : fib(n - 1) + fib(n - 2))))
 
