@@ -1,6 +1,6 @@
 {
   "name": "y-combinator-node",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Y combinator for javascript",
   "main": "dist/index.js",
   "directories": {
@@ -43,7 +43,7 @@
     "eslint-plugin-promise": "3.5.0",
     "eslint-plugin-standard": "3.0.1",
     "eslint-watch": "3.1.0",
-    "uglifyjs-webpack-plugin": "1.1.2",
+    "uglifyjs-webpack-plugin": "1.2.3",
     "webpack": "3.5.5"
   },
   "bugs": {
